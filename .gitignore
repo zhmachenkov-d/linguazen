@@ -1,3 +1,10 @@
 # Planning store is its own repository:
 # git@github.com:zhmachenkov-d/linguazen.specs.git
 _bmad-output/
+
+# tokenade — per-project cache / scaffold flag / dedup refs
+.tokenade/
+
+# tokenade — legacy per-project embedding model cache (now global)
+.fastembed_cache/
+.env
