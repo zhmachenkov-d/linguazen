@@ -1,0 +1,27 @@
+---
+description: Never push directly to main — use a feature branch and open a PR.
+alwaysApply: true
+---
+
+# No Direct Pushes to Main
+
+`main` (and `master`) are protected. **Do not commit and push straight to them.**
+
+## Required flow
+
+1. Create or switch to a **feature branch** (even if the user said "commit + push" while on `main`).
+2. Commit on that branch.
+3. Push the feature branch.
+4. Open a **pull request** into `main` (unless the user only asked to push the branch).
+
+```text
+❌ git push origin main
+❌ commit on main, then push
+✅ branch → commit → push branch → gh pr create
+```
+
+## Hard rules
+
+- Never bypass GitHub branch protection (admin bypass, force, or "I have a token that allows it").
+- If already on `main` with local commits: move them onto a new branch before pushing (`git switch -c …`), do not push `main`.
+- Only push directly to `main` if the user **explicitly insists after you warn** that the repo requires a PR.

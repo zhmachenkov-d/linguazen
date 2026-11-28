@@ -7,6 +7,8 @@ alwaysApply: false
 
 Apply when helping with **local Git operations**, **commit/PR wording**, or **post-merge cleanup**.
 
+**Protected default branch:** never push commits directly to `main`/`master`. Use a feature branch and a PR — see always-on rule `no-direct-main`.
+
 ## Conventional Commits
 
 Follow [Conventional Commits](https://www.conventionalcommits.org/) for **git commit subjects** and **PR titles**:
