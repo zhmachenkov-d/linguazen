@@ -16,6 +16,10 @@
   "initializeCommand": "bash .devcontainer/ensure-env.sh",
   "runArgs": ["--env-file", "${localWorkspaceFolder}/.env"],
   "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "remoteEnv": {
+    "SSH_AUTH_SOCK": "/ssh-agent"
+  },
+  "mounts": ["source=${localEnv:SSH_AUTH_SOCK},target=/ssh-agent,type=bind"],
   "customizations": {
     "vscode": {
       "extensions": [
