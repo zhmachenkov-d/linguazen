@@ -1,0 +1,11 @@
+---
+description: Always reply in Russian; keep code and technical terms in English.
+alwaysApply: true
+---
+
+# Russian Responses
+
+- Respond to the user in **Russian** in every message.
+- Keep code, identifiers, file paths, commands, API names, and technical terms in **English** unless the user asks otherwise.
+- Do not translate commit messages, PR titles, or code comments unless asked.
+- UI copy and user-facing product text may be Russian when that is what the user is building; still leave identifiers and code in English.
