@@ -1,6 +1,4 @@
-# Planning store is its own repository:
-# git@github.com:zhmachenkov-d/linguazen.specs.git
-_bmad-output/
+# Planning store: git submodule → zhmachenkov-d/linguazen.specs (_bmad-output/)
 
 # tokenade — per-project cache / scaffold flag / dedup refs
 .tokenade/
